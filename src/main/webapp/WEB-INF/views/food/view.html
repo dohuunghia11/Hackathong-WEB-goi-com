@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${food.name}">Title</title>
+</head>
+<body>
+<p>
+    <a href="/food/list">Food list</a>
+</p>
+<table th:object="${food}">
+    <tr>
+        <td>Name:</td>
+        <td th:text="*{name}"></td>
+    </tr>
+    <tr>
+        <td>Chef:</td>
+        <td th:text="*{chef}"></td>
+    </tr>
+    <tr>
+        <td>Price:</td>
+        <td th:text="*{price}"></td>
+    </tr>
+    <tr>
+        <a th:href="@{/food/add/__${food.id}__ }">Add To Store</a>
+    </tr>
+</table>
+</body>
+</html>
