@@ -49,7 +49,7 @@ public class ApplicationConfiguration extends WebMvcConfigurerAdapter implements
     }
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("file:/home/duonglulu/IdeaProjects/demo3/src/main/resources/");
+        registry.addResourceHandler("/resources/**").addResourceLocations("file:/home/nghia/C0519I1-HKT/src/main/resources/");
     }
     @Bean
     public FoodService foodService(){
